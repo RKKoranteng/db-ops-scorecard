@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const prevSectionButton = document.createElement('a');
       prevSectionButton.href = `section${currentSectionNumber - 1}.html`;
       prevSectionButton.className = 'btn btn-prev';
-      prevSectionButton.textContent = `Go to Section ${currentSectionNumber - 1}`;
+      prevSectionButton.textContent = `Prev: Section ${currentSectionNumber - 1}`;
       navButtons.appendChild(prevSectionButton);
     }
   
@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const nextSectionButton = document.createElement('a');
       nextSectionButton.href = `section${currentSectionNumber + 1}.html`;
       nextSectionButton.className = 'btn btn-next';
-      nextSectionButton.textContent = `Go to Section ${currentSectionNumber + 1}`;
+      nextSectionButton.textContent = `Next: Section ${currentSectionNumber + 1}`;
       navButtons.appendChild(nextSectionButton);
     } else {
       // Display a "Congratulations" message on the last section
       const congratsMessage = document.createElement('p');
-      congratsMessage.textContent = 'Congratulations! You’ve completed the SQL course.';
+      congratsMessage.className = 'btn btn-congrats';
+      congratsMessage.textContent = 'Congratulations! You’ve completed the course.';
       navButtons.appendChild(congratsMessage);
     }
   
