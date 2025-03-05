@@ -1,11 +1,11 @@
-<!-- courses/git/section1.html -->
-<!-- overview -->
+<!-- courses/git/section3.html -->
+<!-- local version control system -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Git - Overview</title>
+  <title>Git - Local Version Control Systems</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -24,30 +24,28 @@
 
     <!-- Course Content -->
     <main class="course-content">
-      <h1>Overview</h1>
-      <h2>What is git</h2>
-      <p>SQL (Structured Query Language) is a standard language for managing and manipulating databases.</p>
+      <h2> <font color="#007BFF">Local Version Control Systems (LVCS)</font></h2>
 
-      <!-- Command Block Example -->
-      <h3>Basic SQL Commands</h3>
-      <p>Here are some basic SQL commands you can run:</p>
-      <pre><code class="language-sql">-- Select all records from a table
-SELECT * FROM users;
+      <h3>About LVCS</h3>
+      <p>A Local Version Control System (LVCS) was the first type of version control system to be created and it allowed users to track all file changes and revisions solely on a single user's local computer, meaning the version history is only accessible on that machine, making collaboration with other developers difficult and prone to data loss if the local machine is compromised. RCS (Revision Control System) is a common example of a local version control system. </p>
 
--- Insert a new record into a table
-INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
-
--- Update a record in a table
-UPDATE users SET email = 'johndoe@example.com' WHERE id = 1;
-
--- Delete a record from a table
-DELETE FROM users WHERE id = 1;
-</code></pre>
+      <h3>Pros:</h3>
+      <ul>
+        <li>Simple setup: For individual developers working on small projects, a local system can be easy to set up and manage.
+        </li>
+      </ul>
+ 
+      <h3>Cons:</h3>
+      <ul>
+        <li>Data loss risk: if the local computer is damaged or the local database is corrupted, all version history can be lost</li>
+        <li>Limited collaboration: working with a team on the same project becomes very difficult. </li>
+      </ul>
 
       <!-- Go to Next/Previous Section Buttons -->
       <div id="next-section">
         <!-- Buttons will be dynamically generated here -->
       </div>
+
     </main>
   </div>
 
