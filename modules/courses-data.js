@@ -15,15 +15,15 @@ const courses = [
   },
   {
     id: 2,
-    folder: 'database-design', // Folder name for this course
-    title: 'Database Design',
+    folder: 'git', // Folder name for this course
+    title: 'Git - Beginners Guide',
     description: 'Understand how to design efficient and scalable databases.',
     sections: [
-      { title: 'Introduction to Database Design', link: 'section1.html' },
+      { title: 'Overview', link: 'section1.html' },
       { title: 'Normalization', link: 'section2.html' },
       { title: 'Entity-Relationship Diagrams', link: 'section3.html' },
     ],
-    link: 'courses/database-design/section1.html', // Link to the first section
+    link: 'courses/git/section1.html', // Link to the first section
   },
   // Add more courses as needed
 ];
