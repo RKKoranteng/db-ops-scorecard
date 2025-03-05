@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = `
       <nav>
         <div class="logo">
-          <a href="/index.html">Free DBA Learning</a>
+          <a href="/index.html">learn-with-rk</a>
         </div>
         <ul class="nav-links">
           <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/index.html">Home</a></li>
