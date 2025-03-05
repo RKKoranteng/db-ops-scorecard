@@ -20,8 +20,10 @@ const courses = [
     description: 'Understand how to design efficient and scalable databases.',
     sections: [
       { title: 'Overview', link: 'section1.html' },
-      { title: 'Normalization', link: 'section2.html' },
-      { title: 'Entity-Relationship Diagrams', link: 'section3.html' },
+      { title: 'About VCS', link: 'section2.html' },
+      { title: 'Local VCS', link: 'section3.html' },
+      { title: 'Centralized VCS', link: 'section4.html' },
+      { title: 'Distributed VCS', link: 'section5.html' },
     ],
     link: 'courses/git/section1.html', // Link to the first section
   },
