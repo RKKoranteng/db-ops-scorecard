@@ -293,19 +293,28 @@ pre[class*="language-"] {
 }
 
 .btn-prev {
-  background-color: #6c757d; /* Gray for previous button */
+  /** background-color: #6c757d; **/
+  font-weight: lighter;
 }
 
 .btn-prev:hover {
-  background-color: #5a6268; /* Darker gray on hover */
+  /** background-color: #0056b3; */
+  font-weight: bold;
 }
 
 .btn-next {
-  background-color: #007BFF; /* Blue for next button */
+  /** background-color: #007BFF; */
+  font-weight: lighter;
 }
 
 .btn-next:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  /** background-color: #0056b3; */
+  font-weight: bold;
+}
+
+.btn-congrats {
+  /** background-color: #00b327; **/
+  color: #00b126;
 }
 
 /* Course Container */
