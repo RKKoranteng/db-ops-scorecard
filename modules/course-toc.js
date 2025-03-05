@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Find the course data
     const course = courses.find(course => course.folder === courseFolder);
     console.log(courses);
-
+   
     if (course) {
       // Render the table of contents (TOC)
       const toc = document.getElementById('toc');
