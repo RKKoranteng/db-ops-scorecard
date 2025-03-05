@@ -4,12 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Get the current course folder and section from the URL
     const currentPath = window.location.pathname; // e.g., "/courses/sql/section1.html"
-    const courseFolder = currentPath.split('/')[2]; // e.g., "sql"
+    
+    function getFolderName(filePath) {
+      const parts = filePath.split('/');
+      if (parts.length >= 2) {
+        return parts[parts.length - 2];
+      }
+      return '';
+    }
+    const filePath = currentPath
+    const courseFolder = getFolderName(filePath);
+        
     const currentSection = currentPath.split('/').pop(); // e.g., "section1.html"
-  
+      
     // Find the course data
     const course = courses.find(course => course.folder === courseFolder);
-  
+    console.log(courses);
+
     if (course) {
       // Render the table of contents (TOC)
       const toc = document.getElementById('toc');
