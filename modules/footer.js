@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <footer>
         <p>&copy; 2025 Learn with RK. All rights reserved.</p>
         <ul class="footer-links">
-          <li><a href="terms.html">Terms</a></li>
+          <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/terms.html">Terms</a></li>
           <li><a href="course.html">Courses</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
