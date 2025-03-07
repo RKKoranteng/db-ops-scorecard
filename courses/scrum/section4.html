@@ -1,11 +1,11 @@
-<!-- courses/git/section1.html -->
-<!-- overview -->
+<!-- courses/git/section4.html -->
+<!-- centralized version control system -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Git - Overview</title>
+  <title>Git - Centralized Version Control Systems</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -24,30 +24,28 @@
 
     <!-- Course Content -->
     <main class="course-content">
-      <h1>Overview</h1>
-      <h2>What is git</h2>
-      <p>SQL (Structured Query Language) is a standard language for managing and manipulating databases.</p>
+      <h2> <font color="#007BFF">Centralized Version Control Systems (CVCS)</font></h2>
 
-      <!-- Command Block Example -->
-      <h3>Basic SQL Commands</h3>
-      <p>Here are some basic SQL commands you can run:</p>
-      <pre><code class="language-sql">-- Select all records from a table
-SELECT * FROM users;
+      <h3>About CVCS</h3>
+      <p>Centralized Version Control Systems (CVCS) were developed to address limitation of LVCS, mainly collaboration issues. A Centralized Version Control System is a type of VSC where all changes of a project's files are stored on a single central server, meaning every developer accesses and modifies code from that one central repository. This is unlike a LVCS where only one user users has a local copy of the repository with full version history. </p>
 
--- Insert a new record into a table
-INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
-
--- Update a record in a table
-UPDATE users SET email = 'johndoe@example.com' WHERE id = 1;
-
--- Delete a record from a table
-DELETE FROM users WHERE id = 1;
-</code></pre>
+      <h3>Pros:</h3>
+      <ul>
+        <li>Centralized visibility: All team members can easily see the latest version of the code and track changes made by other.
+        </li>
+      </ul>
+ 
+      <h3>Cons:</h3>
+      <ul>
+        <li>Dependency: developer can't access project files if the centralized server is offline</li>
+        <li>Data loss risk: The biggest disadvantage is the single point of failure embedded within the centralized server.</li>
+      </ul>
 
       <!-- Go to Next/Previous Section Buttons -->
       <div id="next-section">
         <!-- Buttons will be dynamically generated here -->
       </div>
+
     </main>
   </div>
 
