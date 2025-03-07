@@ -1,6 +1,20 @@
 // modules/courses-data.js
 const courses = [
   {
+    id: 3,
+    folder: 'scum', // Folder name for this course
+    title: 'Scrum Simplified',
+    description: 'a beginners guide to Agile project management',
+    sections: [
+      { title: 'Overview', link: 'section1.html' },
+      { title: 'About VCS', link: 'section2.html' },
+      { title: 'Local VCS', link: 'section3.html' },
+      { title: 'Centralized VCS', link: 'section4.html' },
+      { title: 'Distributed VCS', link: 'section5.html' },
+    ],
+    link: 'courses/scrum/section1.html', // Link to the first section
+  },   
+  {
     id: 2,
     folder: 'git', // Folder name for this course
     title: 'Git - Beginners Guide',
