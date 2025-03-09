@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentSectionNumber = parseInt(currentPage.replace('section', '').replace('.html', ''));
   
     // Define the total number of sections for this course
-    const totalSections = 5; // Update this for each course
+    const totalSections = 11; // Update this for each course
   
     // Get the "next-section" container
     const nextSectionContainer = document.getElementById('next-section');

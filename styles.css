@@ -389,3 +389,10 @@ pre[class*="language-"] {
     border-bottom: 1px solid #ddd;
   }
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
