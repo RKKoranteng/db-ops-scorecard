@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/index.html">Home</a></li>
           <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/course.html">Courses</a></li>
           <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/about.html">About</a></li>
-          <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/contact.html">Contact</a></li>
+          <!-- <li><a href="file:///C:/Users/richa/OneDrive/Desktop/github/modern-dba-project/contact.html">Contact</a></li> -->
           <!-- <li><a href="login.html" class="login-btn">Login</a></li> -->
         </ul>
       </nav>
