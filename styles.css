@@ -148,7 +148,7 @@ body {
     margin: 0 1rem;
   }
   
-  footer .footer-links a {
+  footer .footer-links a, a {
     color: #fff;
     text-decoration: none;
   }
