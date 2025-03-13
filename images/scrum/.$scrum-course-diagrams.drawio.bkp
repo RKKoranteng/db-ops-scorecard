@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="nIMtulDSU1YHjw0HaSG2">
+    <mxGraphModel dx="2074" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="119.75" y="440" width="148" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-5" value="&lt;b&gt;Product Owner&lt;/b&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#B09500;fillColor=#e3c800;shape=mxgraph.azure.user;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="170" y="468" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-6" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="440" width="148" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-7" value="&lt;b&gt;Scrum Master&lt;/b&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#B09500;fillColor=#e3c800;shape=mxgraph.azure.user;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480.25" y="468" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-10" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="740" y="440" width="148" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-11" value="&lt;b&gt;Development Team&lt;/b&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#B09500;fillColor=#e3c800;shape=mxgraph.azure.user;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="790.25" y="468" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-13" value="owns &quot;what&quot; is desired and &quot;why&quot; it&#39;s desired" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-14" value="keeper of scrum process, facilitator" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="354" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0CPUESTCE0OIJMO9KGsi-15" value="owns &quot;how&quot; and &quot;how quickly&quot; work is delivered" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="664" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
