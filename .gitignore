@@ -1,8 +1,2 @@
-# unreleased
-login*
-
-# ignore all course backup files
-courses/*/*.bak
-
-# ignore pages
-contact.html
+# disable all workflows
+.github/workflows/*.yml
