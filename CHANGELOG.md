@@ -8,3 +8,4 @@ All notable changes to this project will be documented in this file.
 ### 2025.11.13
 - ref: disable all workflows
 - add: issue templates
+- ref: disable rfc issue template

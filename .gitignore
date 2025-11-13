@@ -1,2 +1,5 @@
 # disable all workflows
 .github/workflows/*.yml
+
+# from my-repository-template
+.github/ISSUE_TEMPLATE/rfc.yml
