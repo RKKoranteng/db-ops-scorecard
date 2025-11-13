@@ -1,8 +1,8 @@
-# unreleased
-login*
+# disable all workflows
+.github/workflows/*.yml
 
-# ignore all course backup files
-courses/*/*.bak
+# from my-repository-template
+.github/ISSUE_TEMPLATE/rfc.yml
 
-# ignore pages
-contact.html
+# ignore draw.io temp files
+assets/*.drawio.bkp
