@@ -11,3 +11,4 @@ All notable changes to this project will be documented in this file.
 - add: issue templates
 - ref: disable rfc issue template
 - ref: change LICENSE to CC0 1.0 Universal
+- ref: ignore draw.io temp files

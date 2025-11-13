@@ -3,3 +3,6 @@
 
 # from my-repository-template
 .github/ISSUE_TEMPLATE/rfc.yml
+
+# ignore draw.io temp files
+assets/*.drawio.bkp
