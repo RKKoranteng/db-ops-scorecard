@@ -6,4 +6,5 @@ All notable changes to this project will be documented in this file.
 
 ## Changes
 ### 2025.11.13
-- ref: disable all workflows 
+- ref: disable all workflows
+- add: issue templates
