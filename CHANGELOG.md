@@ -16,3 +16,4 @@ All notable changes to this project will be documented in this file.
 - 11.13 add: roadmap png 
 - 11.18 ref: pivot project and roadmap
 - 11.18 ref: change CNAME to resolve to correct D.O.S project
+- 11.18 ref: change site-name color (#478AC9)
