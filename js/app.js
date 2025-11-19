@@ -8,6 +8,11 @@ const copyStatusEl = document.getElementById("copy-status");
 const ctaEl = document.getElementById("cta");
 const ctaTextEl = document.getElementById("cta-text");
 
+// Config
+const MAX_SCORE_PER_QUESTION = 3;
+const BOOKING_URL =
+  "https://rkkoranteng.com/Contact.html";
+
 // For nicer labels & summary text
 const categoryLabels = {
   capacity: "Capacity",
@@ -76,13 +81,19 @@ form.addEventListener("submit", function (e) {
   let catCount = 0;
 
   Object.keys(totals).forEach(cat => {
-    const max = counts[cat] * 3;   // 3 = max per question
-    const pct = Math.round((totals[cat] / max) * 100);
+    const max = counts[cat] * MAX_SCORE_PER_QUESTION;
+    const pct = max > 0 ? Math.round((totals[cat] / max) * 100) : 0;
 
     catScores[cat] = pct;
     combined += pct;
     catCount += 1;
   });
+
+  if (catCount === 0) {
+    scoreEl.textContent = "—";
+    scoreLabelEl.textContent = "No categories found to score.";
+    return;
+  }
 
   const overall = Math.round(combined / catCount);
 
@@ -163,7 +174,7 @@ copyBtn.addEventListener("click", async () => {
   });
 
   lines.push("");
-  lines.push("Book a call: https://rkkoranteng.com/contact");
+  lines.push(`Book a call: ${BOOKING_URL}`);
 
   const summaryText = lines.join("\n");
 

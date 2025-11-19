@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 - link Google forms
 
 ## Changes
-### 2025.11
+### 2025.11-r1
 - 11.13 del: remove obsolete files (pre-11.3)
 - 11.13 ref: disable all workflows
 - 11.13 add: issue templates
@@ -18,4 +18,10 @@ All notable changes to this project will be documented in this file.
 - 11.18 ref: change CNAME to resolve to correct D.O.S project
 - 11.18 ref: change site-name color (#478AC9)
 - 11.18 ref: change meta title
-- 11.19 ref: minimaland clean version tagline
+- 11.19 ref: minimal clean version 
+
+### 2025.11-r2
+- 11.19 fix: footer was outside `<body>`
+- 11.19 ref: added semantic `<main>`
+- 11.19 ref: upgraded the product title for better accessibility/SEO
+- 11.19 fix: introduced named constants instead of magic numbers/URLs

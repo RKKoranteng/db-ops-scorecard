@@ -20,199 +20,200 @@
         />
       </a>
       <div class="site-header-text site-header-centered">
-        <div class="site-name">Database Ops Scorecard</div>
+        <h1 class="site-name">Database Ops Scorecard</h1>
         <div class="site-tagline">
           <a href="https://github.com/RKKoranteng/db-ops-scorecard/blob/main/CHANGELOG.md">
-            Version 2025.11
+            Version 2025.11-r2
           </a>
         </div>
       </div>
     </header> 
   </div>
 
-  <div class="container">
+  <main>
+    <div class="container">
 
-    <p class="intro">
-      Answer a few quick questions about your database environment to get a
-      DB health snapshot and see where to focus improvements.
-    </p>
-    
-    <form id="health-form">
-      
-      <div class="category">
-        <h3>Capacity</h3>
-        <select data-category="capacity">
-          <option value="0">No forecasting</option>
-          <option value="1">Some visibility</option>
-          <option value="2">Good coverage</option>
-          <option value="3">Full forecasting</option>
-        </select>
-
-        <select data-category="capacity">
-          <option value="0">No CPU/IO tracking</option>
-          <option value="1">Basic tracking</option>
-          <option value="2">Regular tracking</option>
-          <option value="3">Continuous monitoring</option>
-        </select>
-
-        <select data-category="capacity">
-          <option value="0">No scale strategy</option>
-          <option value="1">Basic plan</option>
-          <option value="2">Documented</option>
-          <option value="3">Documented + tested</option>
-        </select>
-      </div>
-
-      <div class="category">
-        <h3>Availability</h3>
-        <select data-category="availability">
-          <option value="0">No RPO/RTO</option>
-          <option value="1">Basic</option>
-          <option value="2">Defined</option>
-          <option value="3">Reviewed</option>
-        </select>
-
-        <select data-category="availability">
-          <option value="0">Never tested</option>
-          <option value="1">Old test</option>
-          <option value="2">Tested annually</option>
-          <option value="3">Regular DR tests</option>
-        </select>
-
-        <select data-category="availability">
-          <option value="0">Requires downtime</option>
-          <option value="1">Some downtime</option>
-          <option value="2">Minimal downtime</option>
-          <option value="3">Zero-downtime</option>
-        </select>
-      </div>
-
-      <div class="category">
-        <h3>Monitoring</h3>
-        <select data-category="monitoring">
-          <option value="0">Minimal</option>
-          <option value="1">Basic</option>
-          <option value="2">Good</option>
-          <option value="3">Comprehensive</option>
-        </select>
-
-        <select data-category="monitoring">
-          <option value="0">Noisy alerts</option>
-          <option value="1">Some tuned</option>
-          <option value="2">Mostly tuned</option>
-          <option value="3">Well-tuned</option>
-        </select>
-
-        <select data-category="monitoring">
-          <option value="0">Slow RCA</option>
-          <option value="1">Improving</option>
-          <option value="2">Usually OK</option>
-          <option value="3">Strong RCA</option>
-        </select>
-      </div>
-
-      <div class="category">
-        <h3>Performance</h3>
-        <select data-category="performance">
-          <option value="0">No visibility</option>
-          <option value="1">During issues</option>
-          <option value="2">Periodic review</option>
-          <option value="3">Continuous</option>
-        </select>
-
-        <select data-category="performance">
-          <option value="0">No index strategy</option>
-          <option value="1">Basic</option>
-          <option value="2">Semi-automated</option>
-          <option value="3">Automated</option>
-        </select>
-
-        <select data-category="performance">
-          <option value="0">No wait tracking</option>
-          <option value="1">During issues</option>
-          <option value="2">Regular</option>
-          <option value="3">Structured</option>
-        </select>
-      </div>
-
-      <div class="category">
-        <h3>Security</h3>
-        <select data-category="security">
-          <option value="0">Wide open</option>
-          <option value="1">Some control</option>
-          <option value="2">RBAC</option>
-          <option value="3">Least-privilege enforced</option>
-        </select>
-
-        <select data-category="security">
-          <option value="0">No encryption</option>
-          <option value="1">Partial</option>
-          <option value="2">Full</option>
-          <option value="3">Full + validated</option>
-        </select>
-
-        <select data-category="security">
-          <option value="0">No auditing</option>
-          <option value="1">Minimal</option>
-          <option value="2">Good</option>
-          <option value="3">Full auditing</option>
-        </select>
-      </div>
-
-      <button type="submit">Calculate DB Health</button>
-    </form>
-
-    <div id="results">
-      <h2>DB Health Snapshot: <span id="score">—</span></h2>
-      <p id="score-label" class="score-label">
-        Fill the form and click <strong>Calculate DB Health</strong> to see results.
+      <p class="intro">
+        Answer a few quick questions about your database environment to get a
+        DB health snapshot and see where to focus improvements.
       </p>
+      
+      <form id="health-form">
+        
+        <div class="category">
+          <h3>Capacity</h3>
+          <select data-category="capacity">
+            <option value="0">No forecasting</option>
+            <option value="1">Some visibility</option>
+            <option value="2">Good coverage</option>
+            <option value="3">Full forecasting</option>
+          </select>
 
-      <div class="bar overall-bar">
-        <div class="bar-fill" id="overall-bar-fill"></div>
+          <select data-category="capacity">
+            <option value="0">No CPU/IO tracking</option>
+            <option value="1">Basic tracking</option>
+            <option value="2">Regular tracking</option>
+            <option value="3">Continuous monitoring</option>
+          </select>
+
+          <select data-category="capacity">
+            <option value="0">No scale strategy</option>
+            <option value="1">Basic plan</option>
+            <option value="2">Documented</option>
+            <option value="3">Documented + tested</option>
+          </select>
+        </div>
+
+        <div class="category">
+          <h3>Availability</h3>
+          <select data-category="availability">
+            <option value="0">No RPO/RTO</option>
+            <option value="1">Basic</option>
+            <option value="2">Defined</option>
+            <option value="3">Reviewed</option>
+          </select>
+
+          <select data-category="availability">
+            <option value="0">Never tested</option>
+            <option value="1">Old test</option>
+            <option value="2">Tested annually</option>
+            <option value="3">Regular DR tests</option>
+          </select>
+
+          <select data-category="availability">
+            <option value="0">Requires downtime</option>
+            <option value="1">Some downtime</option>
+            <option value="2">Minimal downtime</option>
+            <option value="3">Zero-downtime</option>
+          </select>
+        </div>
+
+        <div class="category">
+          <h3>Monitoring</h3>
+          <select data-category="monitoring">
+            <option value="0">Minimal</option>
+            <option value="1">Basic</option>
+            <option value="2">Good</option>
+            <option value="3">Comprehensive</option>
+          </select>
+
+          <select data-category="monitoring">
+            <option value="0">Noisy alerts</option>
+            <option value="1">Some tuned</option>
+            <option value="2">Mostly tuned</option>
+            <option value="3">Well-tuned</option>
+          </select>
+
+          <select data-category="monitoring">
+            <option value="0">Slow RCA</option>
+            <option value="1">Improving</option>
+            <option value="2">Usually OK</option>
+            <option value="3">Strong RCA</option>
+          </select>
+        </div>
+
+        <div class="category">
+          <h3>Performance</h3>
+          <select data-category="performance">
+            <option value="0">No visibility</option>
+            <option value="1">During issues</option>
+            <option value="2">Periodic review</option>
+            <option value="3">Continuous</option>
+          </select>
+
+          <select data-category="performance">
+            <option value="0">No index strategy</option>
+            <option value="1">Basic</option>
+            <option value="2">Semi-automated</option>
+            <option value="3">Automated</option>
+          </select>
+
+          <select data-category="performance">
+            <option value="0">No wait tracking</option>
+            <option value="1">During issues</option>
+            <option value="2">Regular</option>
+            <option value="3">Structured</option>
+          </select>
+        </div>
+
+        <div class="category">
+          <h3>Security</h3>
+          <select data-category="security">
+            <option value="0">Wide open</option>
+            <option value="1">Some control</option>
+            <option value="2">RBAC</option>
+            <option value="3">Least-privilege enforced</option>
+          </select>
+
+          <select data-category="security">
+            <option value="0">No encryption</option>
+            <option value="1">Partial</option>
+            <option value="2">Full</option>
+            <option value="3">Full + validated</option>
+          </select>
+
+          <select data-category="security">
+            <option value="0">No auditing</option>
+            <option value="1">Minimal</option>
+            <option value="2">Good</option>
+            <option value="3">Full auditing</option>
+          </select>
+        </div>
+
+        <button type="submit">Calculate DB Health</button>
+      </form>
+
+      <div id="results">
+        <h2>DB Health Snapshot: <span id="score">—</span></h2>
+        <p id="score-label" class="score-label">
+          Fill the form and click <strong>Calculate DB Health</strong> to see results.
+        </p>
+
+        <div class="bar overall-bar">
+          <div class="bar-fill" id="overall-bar-fill"></div>
+        </div>
+
+        <div id="details"></div>
+
+        <div class="results-actions">
+          <button type="button" id="copy-summary-btn" class="secondary-btn">
+            Copy Summary
+          </button>
+          <span id="copy-status" class="copy-status"></span>
+        </div>
+
+        <div id="cta" class="cta hidden">
+          <h3>Turn Your DB Health Score into a Roadmap</h3>
+          <p id="cta-text"></p>
+          <a
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2BMW_ebBrDPEnl5n3oiZziXvGFj0LRBzxEQZTsjCmE_M-OWgymxc6LqCIRmCe96LgKfmeK87OT"
+            class="cta-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            Book a call with Richard
+          </a>
+        </div>
       </div>
 
-      <div id="details"></div>
+    </div>
+  </main>
 
-      <div class="results-actions">
-        <button type="button" id="copy-summary-btn" class="secondary-btn">
-          Copy Summary
-        </button>
-        <span id="copy-status" class="copy-status"></span>
-      </div>
-
-      <div id="cta" class="cta hidden">
-        <h3>Turn Your DB Health Score into a Roadmap</h3>
-        <p id="cta-text"></p>
-        <a
-          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2BMW_ebBrDPEnl5n3oiZziXvGFj0LRBzxEQZTsjCmE_M-OWgymxc6LqCIRmCe96LgKfmeK87OT"
-          class="cta-btn"
-          target="_blank"
-          rel="noopener"
-        >
-          Book a call with Richard
-        </a>
-      </div>
+  <footer class="footer">
+    <div class="footer-left">
+      Made with 
+      <img class="emoji" alt="heart" height="20" width="20"
+           src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+      by <a href="https://rkkoranteng.com">Richard</a>    
     </div>
 
-  </div>
+    <div class="footer-right">
+      <a href="https://github.com/RKKoranteng/rkkoranteng-website/issues/new/choose" target="_blank">Contribute</a> |    
+      <a href="https://rkkoranteng.com/Privacy.html" class="privacy-link">Privacy</a> |
+      <a href="https://rkkoranteng.com/Terms.html" class="privacy-link">Terms</a>
+    </div>
+  </footer>
 
   <script src="js/app.js"></script>
 </body>
-
-<footer class="footer">
-  <div class="footer-left">
-    Made with 
-    <img class="emoji" alt="heart" height="20" width="20"
-         src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-    by <a href="https://rkkoranteng.com">Richard</a>    
-  </div>
-
-  <div class="footer-right">
-<a href="https://github.com/RKKoranteng/rkkoranteng-website/issues/new/choose" target="_blank">Contribute</a> |    
-    <a href="https://rkkoranteng.com/Privacy.html" class="privacy-link">Privacy</a> |
-    <a href="https://rkkoranteng.com/Terms.html" class="privacy-link">Terms</a>
-  </div>
-</footer>
-
 </html>
