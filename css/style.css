@@ -45,6 +45,30 @@ body {
   flex-direction: column;
 }
 
+/* Make the header vertical instead of horizontal */
+.site-header-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center the title + tagline under the logo */
+.site-header-centered {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.site-header-centered .site-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.site-header-centered .site-tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 .site-name {
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -57,6 +81,19 @@ body {
 .site-tagline {
   font-size: 0.70rem;
   color: #4b5563;
+  padding: 20px 0px 0px 0px;
+}
+
+.site-tagline a {
+  color: inherit;         /* keep the original color */
+  text-decoration: none;  /* no underline by default */
+  font-weight: normal;    /* keep original weight */
+  transition: all 0.2s ease;
+}
+
+.site-tagline a:hover {
+  font-weight: 700;        /* bold on hover */
+  text-decoration: underline;
 }
 
 /* Typography */

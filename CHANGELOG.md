@@ -18,3 +18,4 @@ All notable changes to this project will be documented in this file.
 - 11.18 ref: change CNAME to resolve to correct D.O.S project
 - 11.18 ref: change site-name color (#478AC9)
 - 11.18 ref: change meta title
+- 11.19 ref: minimaland clean version tagline
