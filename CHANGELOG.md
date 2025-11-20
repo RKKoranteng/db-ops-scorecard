@@ -27,4 +27,5 @@ All notable changes to this project will be documented in this file.
 - 11.18 ref: change meta title
 - 11.19 ref: minimal clean version
 - 11.20 ref: rename directory for images
+- 11.20 add: add image for documentation
 
