@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - 11.19 ref: added semantic `<main>`
 - 11.19 ref: upgraded the product title for better accessibility/SEO
 - 11.19 fix: introduced named constants instead of magic numbers/URLs
+- 11.20 ref: change LICENSE to Apache 2.0
 
 ### 2025.11-r1
 - 11.13 del: remove obsolete files (pre-11.3)
@@ -30,7 +31,4 @@ All notable changes to this project will be documented in this file.
 - 11.20 add: add image for documentation
 - 11.20 ref: update to Proprietary Source-Available 
 - 11.20 add: readme
-
-### 2025.11-r2
-- 11.20 ref: change LICENSE to Apache 2.0
 
