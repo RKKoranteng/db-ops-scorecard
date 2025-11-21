@@ -31,3 +31,6 @@ All notable changes to this project will be documented in this file.
 - 11.20 ref: update to Proprietary Source-Available 
 - 11.20 add: readme
 
+### 2025.11-r2
+- 11.20 ref: change LICENSE to Apache 2.0
+
