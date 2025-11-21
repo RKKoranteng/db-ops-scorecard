@@ -2,7 +2,9 @@
 
 ## The Repo
 
-This repository is where I develop the [Database Ops Scorecard](https://dos.rkkoranteng.com) product and publish associated [documentation](#).
+This repository is where we:
+* develop the [Database Ops Scorecard](https://dos.rkkoranteng.com) product
+* publish associated [documentation](https://github.com/RKKoranteng/db-ops-scorecard/wiki)
 
 ## Whats is D.O.S?
 <!--<p align="center">
@@ -12,19 +14,12 @@ This repository is where I develop the [Database Ops Scorecard](https://dos.rkko
 [Database Ops Scorecard (D.O.S)](https://dos.rkkoranteng.com) is a lightweight, browser-based tool that provides a fast, practical assessment of your database reliability posture. It helps database teams, engineers, and technical leaders quickly understand how resilient their database operations are by scoring key areas that directly impact stability and performance.
 
 ## Contributing
-The best way to contribute is through GitHub.
-
-* [Submit bugs and feature requests](issues), and help us verify mature the platform
-* Review [source code changes](pulls)
-* Review the [documentation](wiki) and make pull requests for anything from typos
-
-> Please check for open similar [issues](issues) before opening another one.
+You are welcome to submit a contribution for review and possible inclusion in this project, but before it will be accepted, I ask that you follow these simple [Contribution guidelines](CONTRIBUTING.md)
 
 ## Code of Conduct
-This project has adopted the [Contributor Covenant 3.0 Code of Conduct](https://www.contributor-covenant.org/version/3/0/code_of_conduct/). For more information see the [Code of Conduct FAQ](#) or contact [richard@rkkoranteng.com](mailto:richard@rkkoranteng.com) with any additional questions or comments.
+This project has adopted the [Contributor Covenant 3.0 Code of Conduct](CODE_OF_CONDUCT.md). 
+
+For more information see the [Code of Conduct FAQ](https://www.contributor-covenant.org/version/3/0/code_of_conduct/) or contact [richard@rkkoranteng.com](mailto:richard@rkkoranteng.com) with any additional questions or comments.
 
 ## License & Ownership
-* Database Ops Scorecard (D.O.S) is a proprietary platform owned by RKKoranteng LLC.
-* The repository is publicly accessible for transparency and to allow the community to report bugs and documentation improvements. 
-* No rights are granted to reuse, redistribute, or commercialize this platform.
-* See [LICENSE ](LICENSE.txt) for full terms
+* See [LICENSE](LICENSE.txt) for full terms

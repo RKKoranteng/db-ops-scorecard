@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - 11.20 add: add code of conduct
 - 11.20 ref: update footer to include doc link
 - 11.20 add: contributing.md
+- 11.21 add: readme.md
 
 ### 2025.11-r1
 - 11.13 del: remove obsolete files (pre-11.3)
