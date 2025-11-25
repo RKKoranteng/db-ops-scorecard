@@ -1,0 +1,15 @@
+name: 💡 Documentation issues
+description: Report documentation typo/issue
+title: "[Story]: "
+labels: ["documentation"]
+assignees: "rkkoranteng"
+projects: "RKKoranteng/24"
+body:
+  - type: textarea
+    id: current-doc
+    attributes:
+      label: Current Documentation
+      description: What is happening.
+      placeholder: A clear and concise description of what the documentation issue/typo is. Add the URL/page.
+    validations:
+      required: true
