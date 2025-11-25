@@ -7,8 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Changes
 ## 2025.11-r3
 - 11.25 ref: change template title (Submit feature request)
-- 11.23 del: obsolete rfc template
-
+- 11.23 del: obsolete rfc 
+- 11.23 add: documentation issue template
 
 ### 2025.11-r2
 - 11.19 fix: footer was outside `<body>`
