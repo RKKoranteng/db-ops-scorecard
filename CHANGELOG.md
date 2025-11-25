@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - 11.25 del: obsolete rfc 
 - 11.25 add: documentation issue template
 - 11.25 ref: change documentation issue template tag "Doc"
+- 11.25 goo: go-live 2025.11-r3
 
 ### 2025.11-r2
 - 11.19 fix: footer was outside `<body>`
