@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 - link Google forms
 
 ## Changes
+## 2025.11-r3
+- 11.25 ref: change template title (Submit feature request)
+
 
 ### 2025.11-r2
 - 11.19 fix: footer was outside `<body>`
