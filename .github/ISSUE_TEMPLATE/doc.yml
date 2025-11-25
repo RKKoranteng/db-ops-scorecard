@@ -1,6 +1,6 @@
 name: 💡 Documentation issues
 description: Report documentation typo/issue
-title: "[Story]: "
+title: "[Doc]: "
 labels: ["documentation"]
 assignees: "rkkoranteng"
 projects: "RKKoranteng/24"
