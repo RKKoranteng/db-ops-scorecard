@@ -11,6 +11,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
+- Shorten CONTRIBUTING.md to a one-line invitation
 - Rewrite CONTRIBUTING.md to match the project wiki
 - Give every push to main its own tag and release, numbering same-day releases YYYY.MM.DD.N
 
