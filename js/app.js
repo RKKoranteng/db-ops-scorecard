@@ -153,6 +153,7 @@ form.addEventListener("submit", function (e) {
 
   ctaTextEl.textContent = `Your current DB health is ${overall}% (${rating.label}). A focused working session can quickly improve ${lowestLabel} and give you a concrete reliability roadmap for the next 90 days.`;
   ctaEl.classList.remove("hidden");
+  document.getElementById("results").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 // Copy summary handler
@@ -201,4 +202,34 @@ copyBtn.addEventListener("click", async () => {
   setTimeout(() => {
     copyStatusEl.textContent = "";
   }, 4000);
+});
+
+// Theme toggle, matching rkkoranteng.com (choice stays in this browser)
+function currentTheme() {
+  const set = document.documentElement.getAttribute("data-theme");
+  if (set) return set;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+document.querySelectorAll(".theme-toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const next = currentTheme() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+});
+
+// Mobile nav
+const siteHeader = document.querySelector(".site-header");
+const navToggle = document.querySelector(".nav-toggle");
+if (siteHeader && navToggle) {
+  navToggle.addEventListener("click", () => {
+    const open = siteHeader.classList.toggle("nav-open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
+}
+
+// Footer year
+document.querySelectorAll("[data-year]").forEach(el => {
+  el.textContent = new Date().getFullYear();
 });

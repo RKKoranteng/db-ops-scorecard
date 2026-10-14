@@ -7,6 +7,9 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 
 ## [Unreleased]
 
+### Changed
+- Restyle the site to match rkkoranteng.com, with its header, colors, cards, dark mode and footer
+
 ## [2026.10.14]
 
 ### Added

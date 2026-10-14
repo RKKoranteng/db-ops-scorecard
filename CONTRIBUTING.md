@@ -42,7 +42,7 @@ Merges, `goo:` commits, and messages containing `[skip changelog]` are left out.
 To capture screenshots of a visual change:
 
 1. Open the affected page in Chrome or Edge and press `F12` to open DevTools.
-2. Capture it at desktop width, then press `Ctrl+Shift+M` (`Cmd+Shift+M` on macOS) to switch to a mobile width such as 390px and capture it again.
+2. Capture it at desktop width, then press `Ctrl+Shift+M` (`Cmd+Shift+M` on macOS) to switch to a mobile width such as 390px and capture it again. Do both in light and dark mode, using the moon/sun button in the header.
 3. To capture the whole page, press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) and run **Capture full size screenshot**.
 4. If your change affects the results view, answer the questions first so the score and category breakdown are on screen.
 
