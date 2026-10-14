@@ -1,13 +1,25 @@
 # Database Ops Scorecard ("D.O.S")
 
-This repository is where we:
-* develop the [Database Ops Scorecard](https://dos.rkkoranteng.com) product
-* publish associated [documentation](https://github.com/RKKoranteng/db-ops-scorecard/wiki)
-* See [LICENSE](LICENSE.txt) for full terms
+[![Keep a Changelog v1.1.0 badge][changelog-badge]][changelog] [![CalVer badge][calver-badge]][calver] [![Latest release badge][release-badge]][releases] [![MIT License badge][license-badge]][license]
 
-Try it and let us know what you think!.
+A self-assessment scorecard to see your database resiliency. 
 
-<!--<p align="center">
-  <img alt="Status Dashboard in action" src="images/dos-2025-11-20-163014.png">
-</p>-->
+This repository generates [https://dos.rkkoranteng.com/](https://dos.rkkoranteng.com)
 
+## Contribute
+
+Please do contribute! Issues and pull requests are welcome.
+
+Development setup, common tasks, and the workflow are documented
+in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Thank you for your help improving this project!
+
+[changelog]: ./CHANGELOG.md
+[changelog-badge]: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.1.0-%23E05735
+[calver]: https://calver.org/
+[calver-badge]: https://img.shields.io/badge/calver-YYYY.MM.DD-22bfda.svg
+[releases]: https://github.com/RKKoranteng/db-ops-scorecard/releases
+[release-badge]: https://img.shields.io/github/v/release/RKKoranteng/db-ops-scorecard?label=version&color=blue
+[license]: ./LICENSE.txt
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
