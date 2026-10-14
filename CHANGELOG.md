@@ -11,6 +11,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
+- Replace Apache 2.0 with MIT license
 - Replace Apache 2.0 with a proprietary source-available license that matches the contribution policy
 - Shorten CONTRIBUTING.md to a one-line invitation
 - Rewrite CONTRIBUTING.md to match the project wiki

@@ -1,58 +1,21 @@
-Database Ops Scorecard (D.O.S) Source-Available License
+The MIT License (MIT)
 
-Copyright (c) 2025-2026 RKKoranteng LLC. All rights reserved.
+Copyright (c) 2025-2026 Richard Koranteng
 
-The Database Ops Scorecard (D.O.S), including its source code, design,
-content, and documentation (the "Software"), is the proprietary property of
-RKKoranteng LLC. The source code is published for transparency and feedback
-only. No license to the Software is granted except as stated below.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Permitted
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-   You may:
-   - View the source code and use the hosted Software at
-     https://dos.rkkoranteng.com
-   - Fork this repository on GitHub, only to the extent required by the
-     GitHub Terms of Service
-   - Submit bug reports, feature requests, and documentation issues through
-     GitHub Issues
-
-2. Not permitted
-
-   Without prior written permission from RKKoranteng LLC, you may not:
-   - Copy, modify, distribute, sublicense, or sell the Software, in whole or
-     in part, for commercial or non-commercial purposes
-   - Host, deploy, or run the Software, or offer it as a product or service
-   - Create derivative works based on the Software
-   - Include any part of the Software in another product or offering
-   - Remove or alter this license or any copyright notice
-
-3. Contributions
-
-   Code contributions, including pull requests, are not accepted unless
-   approved in advance by RKKoranteng LLC. By submitting any issue,
-   suggestion, or other feedback, you grant RKKoranteng LLC a perpetual,
-   irrevocable, worldwide, royalty-free right to use it for any purpose,
-   without obligation to you. If a code contribution is approved and
-   accepted, you assign all rights in it to RKKoranteng LLC.
-
-4. No warranty
-
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE SCORES AND
-   RESULTS IT PRODUCES ARE A SELF-ASSESSMENT, NOT AN AUDIT OR PROFESSIONAL
-   ADVICE.
-
-5. Limitation of liability
-
-   IN NO EVENT SHALL RKKORANTENG LLC BE LIABLE FOR ANY CLAIM, DAMAGES, OR
-   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
-   ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
-
-6. Termination
-
-   Any use of the Software that violates this license ends your permissions
-   under it immediately.
-
-For licensing inquiries, contact richard@rkkoranteng.com.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
