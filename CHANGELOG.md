@@ -13,6 +13,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
+- Simplify CODE_OF_CONDUCT.md for a single-maintainer project, after Keep a Changelog's
 - Point CONTRIBUTING.md to AGENTS.md for project background
 - Restructure CONTRIBUTING.md after Keep a Changelog's guide, with setup, tasks, deployment, issues and pull requests
 - Replace Apache 2.0 with MIT license
