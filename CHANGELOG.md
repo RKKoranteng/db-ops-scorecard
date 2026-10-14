@@ -18,6 +18,9 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Rewrite CONTRIBUTING.md to match the project wiki
 - Give every push to main its own tag and release, numbering same-day releases YYYY.MM.DD.N
 
+### Fixed
+- Replace nonexistent build step in CONTRIBUTING.md with local preview and screenshot steps for the static site
+
 ## [2025.11.25]
 
 ### Added
