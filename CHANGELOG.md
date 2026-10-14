@@ -7,6 +7,8 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 
 ## [Unreleased]
 
+## [2026.10.14]
+
 ### Added
 - Changelog, CalVer, version and license badges to README.md
 - AGENTS.md with the principles behind how the project is built
