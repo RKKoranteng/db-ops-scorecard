@@ -1,12 +1,58 @@
-Copyright 2025 RKKoranteng LLC. All Rights Reserved.
+Database Ops Scorecard (D.O.S) Source-Available License
 
-Licensed under the Apache License, Version 2.0 (the "License"). You
-may not use this file except in compliance with the License. A copy of
-the License is located at
+Copyright (c) 2025-2026 RKKoranteng LLC. All rights reserved.
 
-    https://rkkoranteng.com/license/apache-2-0
+The Database Ops Scorecard (D.O.S), including its source code, design,
+content, and documentation (the "Software"), is the proprietary property of
+RKKoranteng LLC. The source code is published for transparency and feedback
+only. No license to the Software is granted except as stated below.
 
-or in the "license" file accompanying this file. This file is
-distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
-ANY KIND, either express or implied. See the License for the specific
-language governing permissions and limitations under the License.
+1. Permitted
+
+   You may:
+   - View the source code and use the hosted Software at
+     https://dos.rkkoranteng.com
+   - Fork this repository on GitHub, only to the extent required by the
+     GitHub Terms of Service
+   - Submit bug reports, feature requests, and documentation issues through
+     GitHub Issues
+
+2. Not permitted
+
+   Without prior written permission from RKKoranteng LLC, you may not:
+   - Copy, modify, distribute, sublicense, or sell the Software, in whole or
+     in part, for commercial or non-commercial purposes
+   - Host, deploy, or run the Software, or offer it as a product or service
+   - Create derivative works based on the Software
+   - Include any part of the Software in another product or offering
+   - Remove or alter this license or any copyright notice
+
+3. Contributions
+
+   Code contributions, including pull requests, are not accepted unless
+   approved in advance by RKKoranteng LLC. By submitting any issue,
+   suggestion, or other feedback, you grant RKKoranteng LLC a perpetual,
+   irrevocable, worldwide, royalty-free right to use it for any purpose,
+   without obligation to you. If a code contribution is approved and
+   accepted, you assign all rights in it to RKKoranteng LLC.
+
+4. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE SCORES AND
+   RESULTS IT PRODUCES ARE A SELF-ASSESSMENT, NOT AN AUDIT OR PROFESSIONAL
+   ADVICE.
+
+5. Limitation of liability
+
+   IN NO EVENT SHALL RKKORANTENG LLC BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+   ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+6. Termination
+
+   Any use of the Software that violates this license ends your permissions
+   under it immediately.
+
+For licensing inquiries, contact richard@rkkoranteng.com.
