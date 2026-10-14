@@ -8,6 +8,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 ## [Unreleased]
 
 ### Added
+- Pull request guidelines for humans and AI agents in CONTRIBUTING.md
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
