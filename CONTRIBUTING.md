@@ -1,6 +1,6 @@
 # Contributing to Database Ops Scorecard
 
-Please do contribute! [Issues][issues] and pull requests are welcome. This file is the single home for contributor guidance: how to set up the project, work on it, and submit changes. For background on the product, see the [project wiki][wiki].
+Please do contribute! Issues and pull requests are welcome. This file is the single home for contributor guidance: how to set up the project, work on it, and submit changes. For background on the project, see the [project wiki][wiki].
 
 ## Development
 
@@ -8,7 +8,7 @@ Please do contribute! [Issues][issues] and pull requests are welcome. This file 
 
 - Git
 - A modern browser (Chrome or Edge for the screenshot steps below)
-- [Node.js][node], used by the changelog hook
+- Node.js, used by the changelog hook
 - Python 3 (optional), for a local preview server
 
 The site itself is static HTML, CSS, and vanilla JavaScript with no build step, frameworks, or package dependencies.
@@ -74,11 +74,3 @@ These apply to humans and AI agents alike:
 - Use GitHub-flavored Markdown properly — headings, lists, tables, and code fences where they help — so the description renders well.
 
 Thank you for your help improving this project!
-
-[issues]: https://github.com/RKKoranteng/db-ops-scorecard/issues/new/choose
-[wiki]: https://github.com/RKKoranteng/db-ops-scorecard/wiki
-[node]: https://nodejs.org/
-[keepachangelog]: https://keepachangelog.com/en/1.1.0/
-[calver]: https://calver.org/
-[site]: https://dos.rkkoranteng.com/
-[pull-request]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
