@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Database Ops Scorecard | Richard Koranteng</title>
-  <meta name="description" content="A free self-assessment of your database reliability across capacity, availability, monitoring, performance, and security. Runs entirely in your browser.">
+  <meta name="description" content="Free self-assessments of your databases: environment agility, operations, and security. Runs entirely in your browser.">
   <link rel="canonical" href="https://dos.rkkoranteng.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Database Ops Scorecard">
-  <meta property="og:description" content="A free self-assessment of your database reliability across capacity, availability, monitoring, performance, and security.">
+  <meta property="og:description" content="Free self-assessments of your databases: environment agility, operations, and security.">
   <meta property="og:url" content="https://dos.rkkoranteng.com/">
   <link rel="icon" type="image/svg+xml" href="https://rkkoranteng.com/assets/img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="https://rkkoranteng.com/assets/img/favicons/apple-touch-icon.png">
@@ -45,139 +45,25 @@
       <div class="container">
         <span class="eyebrow">Free self-assessment</span>
         <h1>Database Ops Scorecard</h1>
-        <p class="lead">Answer a few quick questions about your database environment to get a health snapshot and see where to focus improvements. Everything runs in your browser; nothing you answer is stored or sent.</p>
+        <p class="lead">Pick a scorecard and answer a few quick questions to see where your databases stand and where to focus improvements. Everything runs in your browser; nothing you answer is stored or sent.</p>
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container">
-        <form id="health-form">
-          <div class="grid grid-3">
+        <div class="tabs" role="tablist" aria-label="Scorecards">
+          <button type="button" role="tab" id="tab-agility" data-scorecard="agility" aria-controls="health-form" aria-selected="true">Environment Agility</button>
+          <button type="button" role="tab" id="tab-operations" data-scorecard="operations" aria-controls="health-form" aria-selected="false" tabindex="-1">Operations</button>
+          <button type="button" role="tab" id="tab-security" data-scorecard="security" aria-controls="health-form" aria-selected="false" tabindex="-1">Security</button>
+        </div>
 
-            <fieldset class="card category">
-              <legend>Capacity</legend>
-              <select data-category="capacity" aria-label="Capacity forecasting">
-                <option value="0">No forecasting</option>
-                <option value="1">Some visibility</option>
-                <option value="2">Good coverage</option>
-                <option value="3">Full forecasting</option>
-              </select>
-
-              <select data-category="capacity" aria-label="CPU and IO tracking">
-                <option value="0">No CPU/IO tracking</option>
-                <option value="1">Basic tracking</option>
-                <option value="2">Regular tracking</option>
-                <option value="3">Continuous monitoring</option>
-              </select>
-
-              <select data-category="capacity" aria-label="Scaling strategy">
-                <option value="0">No scale strategy</option>
-                <option value="1">Basic plan</option>
-                <option value="2">Documented</option>
-                <option value="3">Documented + tested</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="card category">
-              <legend>Availability</legend>
-              <select data-category="availability" aria-label="RPO and RTO">
-                <option value="0">No RPO/RTO</option>
-                <option value="1">Basic</option>
-                <option value="2">Defined</option>
-                <option value="3">Reviewed</option>
-              </select>
-
-              <select data-category="availability" aria-label="Disaster recovery testing">
-                <option value="0">Never tested</option>
-                <option value="1">Old test</option>
-                <option value="2">Tested annually</option>
-                <option value="3">Regular DR tests</option>
-              </select>
-
-              <select data-category="availability" aria-label="Downtime during maintenance">
-                <option value="0">Requires downtime</option>
-                <option value="1">Some downtime</option>
-                <option value="2">Minimal downtime</option>
-                <option value="3">Zero-downtime</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="card category">
-              <legend>Monitoring</legend>
-              <select data-category="monitoring" aria-label="Monitoring coverage">
-                <option value="0">Minimal</option>
-                <option value="1">Basic</option>
-                <option value="2">Good</option>
-                <option value="3">Comprehensive</option>
-              </select>
-
-              <select data-category="monitoring" aria-label="Alert tuning">
-                <option value="0">Noisy alerts</option>
-                <option value="1">Some tuned</option>
-                <option value="2">Mostly tuned</option>
-                <option value="3">Well-tuned</option>
-              </select>
-
-              <select data-category="monitoring" aria-label="Root cause analysis">
-                <option value="0">Slow RCA</option>
-                <option value="1">Improving</option>
-                <option value="2">Usually OK</option>
-                <option value="3">Strong RCA</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="card category">
-              <legend>Performance</legend>
-              <select data-category="performance" aria-label="Performance visibility">
-                <option value="0">No visibility</option>
-                <option value="1">During issues</option>
-                <option value="2">Periodic review</option>
-                <option value="3">Continuous</option>
-              </select>
-
-              <select data-category="performance" aria-label="Index strategy">
-                <option value="0">No index strategy</option>
-                <option value="1">Basic</option>
-                <option value="2">Semi-automated</option>
-                <option value="3">Automated</option>
-              </select>
-
-              <select data-category="performance" aria-label="Wait event tracking">
-                <option value="0">No wait tracking</option>
-                <option value="1">During issues</option>
-                <option value="2">Regular</option>
-                <option value="3">Structured</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="card category">
-              <legend>Security</legend>
-              <select data-category="security" aria-label="Access control">
-                <option value="0">Wide open</option>
-                <option value="1">Some control</option>
-                <option value="2">RBAC</option>
-                <option value="3">Least-privilege enforced</option>
-              </select>
-
-              <select data-category="security" aria-label="Encryption">
-                <option value="0">No encryption</option>
-                <option value="1">Partial</option>
-                <option value="2">Full</option>
-                <option value="3">Full + validated</option>
-              </select>
-
-              <select data-category="security" aria-label="Auditing">
-                <option value="0">No auditing</option>
-                <option value="1">Minimal</option>
-                <option value="2">Good</option>
-                <option value="3">Full auditing</option>
-              </select>
-            </fieldset>
-
-          </div>
+        <form id="health-form" role="tabpanel" aria-labelledby="tab-agility">
+          <p id="scorecard-intro" class="scorecard-intro"></p>
+          <div id="questions" class="grid grid-3"></div>
+          <noscript><p>The scorecard needs JavaScript to show its questions and calculate your score.</p></noscript>
 
           <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Calculate DB Health</button>
+            <button type="submit" class="btn btn-primary">Calculate score</button>
           </div>
         </form>
       </div>
@@ -187,9 +73,9 @@
       <div class="container">
         <div id="results" class="card results">
           <span class="eyebrow">Your results</span>
-          <h2>DB Health Snapshot: <span id="score">—</span></h2>
+          <h2><span id="score-title">Score</span>: <span id="score">—</span></h2>
           <p id="score-label" class="score-label">
-            Fill the form and click <strong>Calculate DB Health</strong> to see results.
+            Answer the questions and click <strong>Calculate score</strong> to see results.
           </p>
 
           <div class="bar overall-bar">
@@ -206,7 +92,7 @@
 
         <div id="cta" class="cta-band hidden">
           <div>
-            <h2>Turn your DB health score into a roadmap.</h2>
+            <h2>Turn your score into a roadmap.</h2>
             <p id="cta-text"></p>
           </div>
           <a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2BMW_ebBrDPEnl5n3oiZziXvGFj0LRBzxEQZTsjCmE_M-OWgymxc6LqCIRmCe96LgKfmeK87OT" target="_blank" rel="noopener">Schedule an intro call</a>
