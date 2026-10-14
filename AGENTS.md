@@ -6,7 +6,7 @@ How-to guidance (setup, previewing, screenshots, commits, and pull requests) liv
 
 ## What this project is
 
-[Database Ops Scorecard (D.O.S)](https://dos.rkkoranteng.com/) is a rapid self-assessment of database reliability. People answer a short set of questions and get an honest score, a breakdown across five areas (capacity, availability, monitoring, performance, and security), and a summary they can share. It is a conversation starter and a baseline for improvement, not an audit or a compliance framework.
+[Database Ops Scorecard](https://dos.rkkoranteng.com/) is a rapid self-assessment of database reliability. People answer a short set of questions and get an honest score, a breakdown across five areas (capacity, availability, monitoring, performance, and security), and a summary they can share. It is a conversation starter and a baseline for improvement, not an audit or a compliance framework.
 
 The project has one maintainer, and its value comes from staying small and trustworthy. Every decision, in the writing and in the code, serves one path: answer the questions, understand the score, and know where to improve.
 

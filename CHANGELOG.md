@@ -14,6 +14,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
+- Use the full name Database Ops Scorecard everywhere
 - Simplify CODE_OF_CONDUCT.md for a single-maintainer project, after Keep a Changelog's
 - Point CONTRIBUTING.md to AGENTS.md for project background
 - Restructure CONTRIBUTING.md after Keep a Changelog's guide, with setup, tasks, deployment, issues and pull requests
@@ -73,7 +74,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 
 ### Changed
 - Project pivoted, with an updated roadmap
-- CNAME resolves to the correct D.O.S project
+- CNAME resolves to the correct Database Ops Scorecard project
 - Site name color changed to `#478AC9`
 - Meta title updated
 

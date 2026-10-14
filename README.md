@@ -1,4 +1,4 @@
-# Database Ops Scorecard ("D.O.S")
+# Database Ops Scorecard
 
 [![Keep a Changelog v1.1.0 badge][changelog-badge]][changelog] [![CalVer badge][calver-badge]][calver] [![Latest release badge][release-badge]][releases] [![MIT License badge][license-badge]][license]
 
