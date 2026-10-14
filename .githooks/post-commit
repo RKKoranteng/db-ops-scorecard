@@ -1,0 +1,24 @@
+#!/bin/sh
+# Adds the commit subject to "## [Unreleased]" in CHANGELOG.md and amends it
+# into the same commit, so every commit is ready to push.
+# Enable once per clone: git config core.hooksPath .githooks
+
+# The amend below runs this hook again; stop there
+[ -n "$CHANGELOG_HOOK" ] && exit 0
+
+# Leave rebases, cherry-picks and merges alone
+for state in rebase-merge rebase-apply CHERRY_PICK_HEAD MERGE_HEAD; do
+  [ -e "$(git rev-parse --git-path "$state")" ] && exit 0
+done
+
+# Commits that only touch the changelog don't need an entry
+git diff-tree --no-commit-id --name-only -r HEAD | grep -qv '^CHANGELOG.md$' || exit 0
+
+root="$(git rev-parse --show-toplevel)"
+subject="$(git log -1 --format=%s)"
+entry="$(node "$root/.github/scripts/add-changelog-entry.js" "$root/CHANGELOG.md" "$subject")" || exit 0
+[ -z "$entry" ] && exit 0
+
+git add "$root/CHANGELOG.md"
+CHANGELOG_HOOK=1 git commit --amend --no-edit --no-verify --quiet
+echo "CHANGELOG.md: $entry"

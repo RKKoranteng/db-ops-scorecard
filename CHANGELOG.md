@@ -1,46 +1,77 @@
 # Changelog
-All notable changes to this project will be documented in this file.
 
-## To-do List
-- link Google forms
+All notable changes to this project are documented here.
 
-## Changes
-## 2025.11-r3
-- 11.25 ref: change template title (Submit feature request)
-- 11.25 del: obsolete rfc 
-- 11.25 add: documentation issue template
-- 11.25 ref: change documentation issue template tag "Doc"
-- 11.25 goo: go-live 2025.11-r3
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD).
 
-### 2025.11-r2
-- 11.19 fix: footer was outside `<body>`
-- 11.19 ref: added semantic `<main>`
-- 11.19 ref: upgraded the product title for better accessibility/SEO
-- 11.19 fix: introduced named constants instead of magic numbers/URLs
-- 11.20 ref: change LICENSE to Apache 2.0
-- 11.20 add: add code of conduct
-- 11.20 ref: update footer to include doc link
-- 11.20 add: contributing.md
-- 11.21 add: readme.md
-- 11.25 ref: link contribution wiki
-- 11.25 ref: make readme easier to read
+## [Unreleased]
 
-### 2025.11-r1
-- 11.13 del: remove obsolete files (pre-11.3)
-- 11.13 ref: disable all workflows
-- 11.13 add: issue templates
-- 11.13 ref: disable rfc issue template
-- 11.13 ref: change LICENSE to CC0 1.0 Universal
-- 11.13 ref: ignore draw.io temp files
-- 11.13 add: roadmap for project
-- 11.13 add: roadmap png 
-- 11.18 ref: pivot project and roadmap
-- 11.18 ref: change CNAME to resolve to correct D.O.S project
-- 11.18 ref: change site-name color (#478AC9)
-- 11.18 ref: change meta title
-- 11.19 ref: minimal clean version
-- 11.20 ref: rename directory for images
-- 11.20 add: add image for documentation
-- 11.20 ref: update to Proprietary Source-Available 
-- 11.20 add: readme
+### Added
+- Automatic changelog entries, commits and dated releases
 
+## [2025.11.25]
+
+### Added
+- Documentation issue template with the "Doc" label
+
+### Changed
+- Feature request issue template retitled "Submit feature request"
+- README reworded to be easier to read and links to the contribution wiki
+
+### Removed
+- Obsolete RFC issue template
+
+## [2025.11.21]
+
+### Added
+- `CONTRIBUTING.md` contribution guide
+- `README.md` project overview
+- Code of conduct
+
+### Changed
+- Footer links to the documentation
+
+## [2025.11.20]
+
+### Added
+- Image for the documentation
+- First README
+
+### Changed
+- Image directory renamed
+- License changed to Proprietary Source-Available, then to Apache 2.0
+
+## [2025.11.19]
+
+### Changed
+- Minimal, clean version of the page and tagline
+- Main content wrapped in a semantic `<main>` element
+- Product title upgraded for better accessibility and SEO
+- Magic numbers and URLs replaced with named constants
+
+### Fixed
+- Footer was rendered outside `<body>`
+
+## [2025.11.18]
+
+### Changed
+- Project pivoted, with an updated roadmap
+- CNAME resolves to the correct D.O.S project
+- Site name color changed to `#478AC9`
+- Meta title updated
+
+## [2025.11.13]
+
+### Added
+- Issue templates
+- Project roadmap, with a PNG version
+
+### Changed
+- All workflows disabled
+- RFC issue template disabled
+- License changed to CC0 1.0 Universal
+- draw.io temp files ignored by git
+
+### Removed
+- Obsolete files from before the 11.3 rework

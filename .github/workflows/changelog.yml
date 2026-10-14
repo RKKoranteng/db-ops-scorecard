@@ -1,0 +1,73 @@
+# When a push to main changes CHANGELOG.md, moves the entries under
+# "## [Unreleased]" to a release dated today, commits the result, and
+# publishes a matching git tag and GitHub release.
+name: "r.K: Release Changelog"
+
+on:
+  push:
+    branches: ["main"]
+    paths: ["CHANGELOG.md"]
+
+  # Run from the Actions tab; optionally release a specific dated section
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Changelog version to release (YYYY.MM.DD). Leave empty for the newest."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "changelog"
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Date unreleased entries
+        id: release
+        run: echo "date=$(node .github/scripts/release-changelog.js CHANGELOG.md)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.release.outputs.date != ''
+        run: |
+          git commit -am "Release changelog ${{ steps.release.outputs.date }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Tag and publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WANTED: ${{ inputs.version }}
+        run: |
+          version="$(node .github/scripts/changelog-notes.js CHANGELOG.md "$RUNNER_TEMP/notes.md" "$WANTED")"
+          if [ -z "$version" ]; then
+            echo "No changelog release to publish"
+            exit 0
+          fi
+          echo "**Full changelog:** https://github.com/${GITHUB_REPOSITORY}/blob/main/CHANGELOG.md" >> "$RUNNER_TEMP/notes.md"
+
+          if gh release view "$version" > /dev/null 2>&1; then
+            # Same-day release already published: refresh its notes, keep the tag
+            gh release edit "$version" --notes-file "$RUNNER_TEMP/notes.md"
+            echo "Updated release $version"
+            exit 0
+          fi
+
+          if ! git ls-remote --exit-code --tags origin "refs/tags/$version" > /dev/null; then
+            git tag -a "$version" -m "Release $version"
+            git push origin "refs/tags/$version"
+          fi
+          gh release create "$version" --title "$version" --notes-file "$RUNNER_TEMP/notes.md" --verify-tag
+          echo "Published release $version"
