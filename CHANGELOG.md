@@ -3,12 +3,15 @@
 All notable changes to this project are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD).
+and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, then YYYY.MM.DD.1, .2, ... for later releases the same day).
 
 ## [Unreleased]
 
 ### Added
 - Automatic changelog entries, commits and dated releases
+
+### Changed
+- Give every push to main its own tag and release, numbering same-day releases YYYY.MM.DD.N
 
 ## [2025.11.25]
 

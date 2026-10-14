@@ -7,6 +7,6 @@ Commits are added to `CHANGELOG.md` automatically. Enable the hook once per clon
 git config core.hooksPath .githooks
 ```
 
-Each commit's subject goes under `## [Unreleased]`, grouped by its prefix: `add:`/`feat:` → Added, `fix:` → Fixed, `del:` → Removed, anything else → Changed. Merges, `goo:` commits and subjects containing `[skip changelog]` are left out. On push to main, the Release Changelog workflow dates the entries and publishes a matching tag and GitHub release.
+Each commit's subject goes under `## [Unreleased]`, grouped by its prefix: `add:`/`feat:` → Added, `fix:` → Fixed, `del:` → Removed, anything else → Changed. Merges, `goo:` commits and subjects containing `[skip changelog]` are left out. Every push to main gets its own release: the Release Changelog workflow moves the entries to a new version (YYYY.MM.DD, then YYYY.MM.DD.1, .2, ... for later pushes the same day) and publishes a matching tag and GitHub release with those entries as the release notes.
 
 When Claude Code finishes a task with uncommitted changes, the Stop hook in `.claude/settings.json` has Claude commit them with a prefixed message, so the change and its changelog entry are ready to push. Claude never pushes on its own.

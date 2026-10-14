@@ -1,6 +1,7 @@
-# When a push to main changes CHANGELOG.md, moves the entries under
-# "## [Unreleased]" to a release dated today, commits the result, and
-# publishes a matching git tag and GitHub release.
+# On every push to main that adds changelog entries, moves the entries under
+# "## [Unreleased]" to a new release (YYYY.MM.DD, then YYYY.MM.DD.1, ... for
+# later pushes the same day), commits the result, and publishes a matching
+# git tag and GitHub release with that section as the release notes.
 name: "r.K: Release Changelog"
 
 on:
@@ -8,11 +9,11 @@ on:
     branches: ["main"]
     paths: ["CHANGELOG.md"]
 
-  # Run from the Actions tab; optionally release a specific dated section
+  # Run from the Actions tab; optionally republish a specific release
   workflow_dispatch:
     inputs:
       version:
-        description: "Changelog version to release (YYYY.MM.DD). Leave empty for the newest."
+        description: "Changelog version to publish (YYYY.MM.DD[.N]). Leave empty for the newest."
         required: false
         default: ""
 
@@ -35,21 +36,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Date unreleased entries
+      - name: Move unreleased entries to a new release
         id: release
-        run: echo "date=$(node .github/scripts/release-changelog.js CHANGELOG.md)" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(node .github/scripts/release-changelog.js CHANGELOG.md)" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push
-        if: steps.release.outputs.date != ''
+        if: steps.release.outputs.version != ''
         run: |
-          git commit -am "Release changelog ${{ steps.release.outputs.date }}"
+          git commit -am "Release changelog ${{ steps.release.outputs.version }}"
           git pull --rebase origin main
           git push origin HEAD:main
 
       - name: Tag and publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-          WANTED: ${{ inputs.version }}
+          WANTED: ${{ steps.release.outputs.version || inputs.version }}
         run: |
           version="$(node .github/scripts/changelog-notes.js CHANGELOG.md "$RUNNER_TEMP/notes.md" "$WANTED")"
           if [ -z "$version" ]; then
@@ -59,7 +60,7 @@ jobs:
           echo "**Full changelog:** https://github.com/${GITHUB_REPOSITORY}/blob/main/CHANGELOG.md" >> "$RUNNER_TEMP/notes.md"
 
           if gh release view "$version" > /dev/null 2>&1; then
-            # Same-day release already published: refresh its notes, keep the tag
+            # Manual re-run for an existing release: refresh its notes, keep the tag
             gh release edit "$version" --notes-file "$RUNNER_TEMP/notes.md"
             echo "Updated release $version"
             exit 0

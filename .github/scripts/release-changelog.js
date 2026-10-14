@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-// Move entries under "## [Unreleased]" in CHANGELOG.md to a release dated today.
+// Move entries under "## [Unreleased]" in CHANGELOG.md to a new release.
 //
 // Usage: node release-changelog.js [path] [YYYY.MM.DD]
-// Prints the release date if anything was released, nothing otherwise.
-// If a release for today already exists, the new entries are merged into it.
+// The release is dated today. The first release of a day is YYYY.MM.DD;
+// later ones that day are YYYY.MM.DD.1, YYYY.MM.DD.2, ...
+// Prints the version if anything was released, nothing otherwise.
 'use strict';
 
 const fs = require('fs');
@@ -50,6 +51,16 @@ function nextRelease(lines, start) {
   return lines.length;
 }
 
+// Next free version for a date: the date itself, then date.1, date.2, ...
+function nextVersion(lines, date) {
+  const escaped = date.replace(/\./g, '\\.');
+  const counters = lines
+    .map(l => l.match(new RegExp(`^## \\[${escaped}(?:\\.(\\d+))?\\]`)))
+    .filter(Boolean)
+    .map(m => Number(m[1] || 0));
+  return counters.length ? `${date}.${Math.max(...counters) + 1}` : date;
+}
+
 const lines = fs.readFileSync(path, 'utf8').replace(/\r\n/g, '\n').split('\n');
 const unreleased = lines.findIndex(l => /^## \[Unreleased\]/i.test(l));
 if (unreleased === -1) {
@@ -61,18 +72,7 @@ const bodyEnd = nextRelease(lines, unreleased);
 const fresh = parseGroups(lines.slice(unreleased + 1, bodyEnd));
 if (!fresh.size) process.exit(0);
 
-const date = process.argv[3] || today();
-let rest = lines.slice(bodyEnd);
-
-// Same-day release already exists: merge the new entries into it (newest first).
-if (rest.length && rest[0].trim() === `## [${date}]`) {
-  const existingEnd = nextRelease(rest, 0);
-  for (const [name, items] of parseGroups(rest.slice(1, existingEnd))) {
-    fresh.set(name, [...(fresh.get(name) || []), ...items]);
-  }
-  rest = rest.slice(existingEnd);
-}
-
-const output = [...lines.slice(0, unreleased + 1), '', `## [${date}]`, '', ...renderGroups(fresh), ...rest];
+const version = nextVersion(lines, process.argv[3] || today());
+const output = [...lines.slice(0, unreleased + 1), '', `## [${version}]`, '', ...renderGroups(fresh), ...lines.slice(bodyEnd)];
 fs.writeFileSync(path, output.join('\n').replace(/\n+$/, '') + '\n');
-console.log(date);
+console.log(version);
