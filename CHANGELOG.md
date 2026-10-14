@@ -13,6 +13,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Automatic changelog entries, commits and dated releases
 
 ### Changed
+- Point CONTRIBUTING.md to AGENTS.md for project background
 - Restructure CONTRIBUTING.md after Keep a Changelog's guide, with setup, tasks, deployment, issues and pull requests
 - Replace Apache 2.0 with MIT license
 - Replace Apache 2.0 with a proprietary source-available license that matches the contribution policy

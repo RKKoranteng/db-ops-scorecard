@@ -1,6 +1,6 @@
 # Contributing to Database Ops Scorecard
 
-Please do contribute! Issues and pull requests are welcome. This file is the single home for contributor guidance: how to set up the project, work on it, and submit changes. For background on the project, see the [project wiki][wiki].
+Please do contribute! Issues and pull requests are welcome. This file is the single home for contributor guidance: how to set up the project, work on it, and submit changes. For background on the project, see [AGENTS.md](AGENTS.md).
 
 ## Development
 
