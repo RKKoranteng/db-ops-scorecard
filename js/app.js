@@ -157,6 +157,15 @@ const SCORECARDS = {
           { q: "How are database credentials rotated?", options: ["Never", "Manually, when needed", "On a schedule", "Automatically"] },
           { q: "Do applications share database accounts?", options: ["One shared account", "Some shared", "One per application", "One per application, least privilege"] }
         ]
+      },
+      {
+        key: "ai-governance",
+        label: "AI Governance",
+        questions: [
+          { q: "How is AI use around your databases governed?", options: ["No policy", "Informal guidance", "Documented, AI kept to masked data", "Enforced and audited"] },
+          { q: "How do AI agents and assistants connect to your databases?", options: ["Shared or admin credentials", "Personal user credentials", "Dedicated least-privilege accounts", "Read-only, approval for changes"] },
+          { q: "Is AI-generated SQL or schema change reviewed before it runs?", options: ["No, run as-is", "Sometimes", "Always reviewed by a person", "Reviewed, then run via the pipeline"] }
+        ]
       }
     ]
   }
