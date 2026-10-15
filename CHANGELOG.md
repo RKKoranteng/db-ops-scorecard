@@ -12,6 +12,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Environment Agility, Operations and Security scorecards as separately scored tabs
 
 ### Changed
+- Ask how sensitive data is kept out of AI prompts instead of how AI tools connect, in AI Governance
 - Trim footer links and link the copyright name to rkkoranteng.com
 - Replace main-site menu links with a Documentation link
 - Restyle the site to match rkkoranteng.com, with its header, colors, cards, dark mode and footer

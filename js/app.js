@@ -163,7 +163,7 @@ const SCORECARDS = {
         label: "AI Governance",
         questions: [
           { q: "How is AI use around your databases governed?", options: ["No policy", "Informal guidance", "Documented, AI kept to masked data", "Enforced and audited"] },
-          { q: "How do AI agents and assistants connect to your databases?", options: ["Shared or admin credentials", "Personal user credentials", "Dedicated least-privilege accounts", "Read-only, approval for changes"] },
+          { q: "How do you keep sensitive data out of AI prompts?", options: ["Nothing in place", "Users told not to", "Approved tools that don't retain data", "Technical controls block it"] },
           { q: "Is AI-generated SQL or schema change reviewed before it runs?", options: ["No, run as-is", "Sometimes", "Always reviewed by a person", "Reviewed, then run via the pipeline"] }
         ]
       }
