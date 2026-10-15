@@ -7,6 +7,8 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 
 ## [Unreleased]
 
+## [2026.10.15]
+
 ### Added
 - AI Governance area to the Security scorecard
 - Environment Agility, Operations and Security scorecards as separately scored tabs
