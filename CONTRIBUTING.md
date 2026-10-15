@@ -52,7 +52,7 @@ Include before and after screenshots when you change existing layout or styling.
 
 Every push to `main` deploys and releases automatically:
 
-- The Pages workflow publishes the site to [dos.rkkoranteng.com][site].
+- The Pages workflow publishes the site to [scorecard.rkkoranteng.com][site].
 - The Release Changelog workflow moves the `Unreleased` entries to a new [CalVer][calver] version (`YYYY.MM.DD`, then `YYYY.MM.DD.1`, `.2`, ... for later pushes the same day) and publishes a matching tag and GitHub release with those entries as the release notes.
 
 ## Issues

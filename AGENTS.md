@@ -6,7 +6,7 @@ How-to guidance (setup, previewing, screenshots, commits, and pull requests) liv
 
 ## What this project is
 
-[Database Ops Scorecard](https://dos.rkkoranteng.com/) is a set of rapid database self-assessments, each on its own tab and scored separately: Environment Agility (can you rebuild an environment quickly, with minimal manual intervention?), Operations (capacity, availability, performance, recoverability, and observability), and Security. People answer a short set of questions and get an honest score, a breakdown by area, and a summary they can share. The scorecards and their questions live in `SCORECARDS` in `js/app.js`. It is a conversation starter and a baseline for improvement, not an audit or a compliance framework.
+[Database Ops Scorecard](https://scorecard.rkkoranteng.com/) is a set of rapid database self-assessments, each on its own tab and scored separately: Environment Agility (can you rebuild an environment quickly, with minimal manual intervention?), Operations (capacity, availability, performance, recoverability, and observability), and Security. People answer a short set of questions and get an honest score, a breakdown by area, and a summary they can share. The scorecards and their questions live in `SCORECARDS` in `js/app.js`. It is a conversation starter and a baseline for improvement, not an audit or a compliance framework.
 
 The project has one maintainer, and its value comes from staying small and trustworthy. Every decision, in the writing and in the code, serves one path: answer the questions, understand the score, and know where to improve.
 

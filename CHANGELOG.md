@@ -12,6 +12,7 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 - Environment Agility, Operations and Security scorecards as separately scored tabs
 
 ### Changed
+- Point site links and metadata to scorecard.rkkoranteng.com
 - Move the custom domain from dos.rkkoranteng.com to scorecard.rkkoranteng.com
 - Ask how sensitive data is kept out of AI prompts instead of how AI tools connect, in AI Governance
 - Trim footer links and link the copyright name to rkkoranteng.com

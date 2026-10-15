@@ -4,7 +4,7 @@
 
 A self-assessment scorecard to see your database resiliency. 
 
-This repository generates [https://dos.rkkoranteng.com/](https://dos.rkkoranteng.com)
+This repository generates [https://scorecard.rkkoranteng.com/](https://scorecard.rkkoranteng.com)
 
 ## Contribute
 
