@@ -7,6 +7,8 @@ and this project uses [Calendar Versioning](https://calver.org/) (YYYY.MM.DD, th
 
 ## [Unreleased]
 
+## [2026.10.19]
+
 ### Changed
 - Point the issue chooser's "Contact me" link to the booking calendar
 
